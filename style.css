@@ -9,7 +9,6 @@
     --start-size1:      1em;
     --startpxsize:      10px;
 }
-
 body {
     background: var(--background-colr);
     font-family: var(--primary-font);
