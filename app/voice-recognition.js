@@ -1,6 +1,6 @@
- const elementGuess = document.getElementById('Guess');
+const elementGuess = document.getElementById('Guess');
  
- 
+
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 recognition.lang = 'pt-Br';
@@ -11,6 +11,7 @@ recognition.addEventListener('result', onSpeak)
 function onSpeak(e) {
    var guess = e.results[0][0].transcript;
    showGuessOnScreen(guess);
+   verifyIfGuessIsValid(guess);
 }
 function showGuessOnScreen(guess) {
     elementGuess.innerHTML = `
