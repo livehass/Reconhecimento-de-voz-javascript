@@ -24,15 +24,21 @@ body {
     justify-content: center;
     margin: 0;
 }
-div , h1, h3, span {
+div , h1, h2, h3, h4, span {
     text-shadow: var(--shadow-colr);
 }
 h1 {
     font-size: calc(var(--start-size1) * 3);
 }
+h2 {
+    font-size: calc(var(--start-size1) * 3);
+}
 h3 {
     font-size: var(--start-size1);
     margin-top: calc(var(--startpxsize) * 2);
+}
+h4 {
+    font-size: calc(var(--start-size1) * 3);
 }
 .mensagem {
     font-size: 1.5em;
@@ -47,4 +53,7 @@ h3 {
 }
 .error {
     color: var(--color-change);
+}
+#right-number {
+    box-shadow: var(--shadow-box-);
 }

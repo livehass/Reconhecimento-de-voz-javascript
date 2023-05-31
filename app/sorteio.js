@@ -6,6 +6,8 @@ const highElementValue = document.getElementById('maior-valor');
 
 function getRandomNumber() {
    return parseInt(Math.random()* highValue + 1);
+   
 }
 lowElementValue.innerHTML = lowValue;
 highElementValue.innerHTML = highValue;
+console.log(randomNumber);
