@@ -1,7 +1,11 @@
+const lowValue = 1;
+const highValue = 1000;
 const randomNumber = getRandomNumber();
+const lowElementValue = document.getElementById('menor-valor');
+const highElementValue = document.getElementById('maior-valor');
 
 function getRandomNumber() {
-   return parseInt(Math.random()* 100);
+   return parseInt(Math.random()* highValue + 1);
 }
-
-console.log(randomNumber)
+lowElementValue.innerHTML = lowValue;
+highElementValue.innerHTML = highValue;
