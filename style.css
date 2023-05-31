@@ -31,7 +31,7 @@ h1 {
     font-size: calc(var(--start-size1) * 3);
 }
 h2 {
-    font-size: calc(var(--start-size1) * 3);
+    font-size: calc(var(--start-size1) * 4);
 }
 h3 {
     font-size: var(--start-size1);
