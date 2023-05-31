@@ -6,6 +6,7 @@
     --background-colr:  linear-gradient(90deg, rgba(40,44,51,1) 0%, rgba(83,83,83,1) 50%, rgba(15,18,22,1) 100%);
     --shadow-colr:      rgba(0, 0, 0, 0.507) 3px 6px 5px;
     --shadow-box-:      rgba(11, 244, 66, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    --color-change:	    rgb(220, 20, 60);
     --start-size1:      1em;
     --startpxsize:      10px;
 }
@@ -19,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     margin: 0;
 }
@@ -42,4 +44,7 @@ h3 {
     font-size: calc(var(--start-size1) * 3);
     padding: var(--startpxsize);
     margin: calc(var(--startpxsize) * 2);
+}
+.error {
+    color: var(--color-change);
 }

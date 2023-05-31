@@ -1,11 +1,10 @@
-const elementGuess = document.getElementById('Guess');
- 
-
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+const elementGuess = document.getElementById('Guess');
 const recognition = new SpeechRecognition();
+
+
 recognition.lang = 'pt-Br';
 recognition.start();
-
 recognition.addEventListener('result', onSpeak)
 
 function onSpeak(e) {
