@@ -34,3 +34,9 @@ function ifGuessIsInvalid(number) {
 function numberIsbiggerOrLowerThanAllowed(number){
     return number > highValue || number < lowValue;
 }
+
+document.body.addEventListener("click", e => {
+    if(e.target.id == 'button') {
+        Window.location.reload()
+    }
+});

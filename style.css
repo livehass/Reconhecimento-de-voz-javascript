@@ -62,9 +62,11 @@ h3 {
     font-size: calc(var(--startpxsize) * 3);
     background: var(--primary-colr);
     box-shadow: var(--shadow-box-);
-    margin-top: var(--startpxsize);
+    margin-top: calc(var(--startpxsize) * 3);
     color: var(--text-color);
     text-shadow: var(--shadow-colr);
+    border-radius: var(--startpxsize);
+    font-weight: 700;
     
 }
 .button-play:hover  {
