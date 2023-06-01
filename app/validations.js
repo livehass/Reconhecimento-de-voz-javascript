@@ -19,7 +19,13 @@ function verifyIfGuessIsValid(guess){
 
         ` 
     }else if (number > randomNumber){
-
+        elementGuess.innerHTML = `
+        <div>O número secreto é maior <i class="fa-solid fa-down-long fa-bounce"></i> </div> 
+        `
+    }else {
+        elementGuess.innerHTML = `
+        <div>O número secreto é maior <i class="fa-solid fa-up-long fa-bounce"></i> </div> 
+        `
     }
 }    
 function ifGuessIsInvalid(number) {
