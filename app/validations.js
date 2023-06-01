@@ -18,7 +18,7 @@ function verifyIfGuessIsValid(guess){
         ` 
     }else if (number > randomNumber){
         elementGuess.innerHTML = `
-            <div>O número secreto é maior <i class="fa-solid fa-down-long fa-bounce"></i> </div> 
+            <div>O número secreto é menor <i class="fa-solid fa-down-long fa-bounce"></i> </div> 
         
         `
     }else {

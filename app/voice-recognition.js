@@ -5,7 +5,7 @@ const recognition = new SpeechRecognition();
 
 recognition.lang = 'pt-Br';
 recognition.start();
-recognition.addEventListener('result', onSpeak)
+recognition.addEventListener('result', onSpeak);
 
 function onSpeak(e) {
    var guess = e.results[0][0].transcript;
@@ -18,3 +18,5 @@ function showGuessOnScreen(guess) {
         <span class="box">${guess}</span>
     `
 }
+
+recognition.addEventListener('end', ()=> recognition.start());
