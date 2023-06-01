@@ -27,7 +27,7 @@ function verifyIfGuessIsValid(guess){
             <div>O número secreto é maior <i class="fa-solid fa-up-long fa-bounce"></i> </div> 
         `
     }
-}    
+}   
 function ifGuessIsInvalid(number) {
     return Number.isNaN(number);
 }
@@ -37,6 +37,6 @@ function numberIsbiggerOrLowerThanAllowed(number){
 
 document.body.addEventListener("click", e => {
     if(e.target.id == 'button') {
-        Window.location.reload()
+        window.location.reload()
     }
 });
