@@ -15,6 +15,7 @@ function verifyIfGuessIsValid(guess){
         document.body.innerHTML = `
             <h2>Você acertou!</h2>
             <h4>O número secreto era <span id="right-number">${number}</span></h4>
+            <button id="button" class="button-play">Jogar Novamente</button>
         ` 
     }else if (number > randomNumber){
         elementGuess.innerHTML = `

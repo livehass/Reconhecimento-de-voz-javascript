@@ -7,6 +7,8 @@
     --shadow-colr:      rgba(0, 0, 0, 0.507) 3px 6px 5px;
     --shadow-box-:      rgba(11, 244, 66, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     --color-change:	    rgb(220, 20, 60);
+    --text-color:       rgb(230, 225, 225);
+    --color-after:      rgb(14, 64, 34);
     --start-size1:      1em;
     --startpxsize:      10px;
 }
@@ -27,7 +29,7 @@ body {
 div , h1, h2, h3, h4, span {
     text-shadow: var(--shadow-colr);
 }
-h1 {
+h1, h4 {
     font-size: calc(var(--start-size1) * 3);
 }
 h2 {
@@ -35,25 +37,37 @@ h2 {
 }
 h3 {
     font-size: var(--start-size1);
-    margin-top: calc(var(--startpxsize) * 2);
-}
-h4 {
-    font-size: calc(var(--start-size1) * 3);
+    margin-top: calc(var(--startpxsize) * 2px);
 }
 .mensagem {
     font-size: 1.5em;
-    margin-top: calc(var(--startpxsize) * 4);
+    margin-top: calc(var(--startpxsize) * 4px);
 }
 .box {
     box-shadow: var(--shadow-box-);
     display: inline-block;
     font-size: calc(var(--start-size1) * 3);
     padding: var(--startpxsize);
-    margin: calc(var(--startpxsize) * 2);
+    margin: calc(var(--startpxsize) * 2px);
 }
 .error {
     color: var(--color-change);
 }
 #right-number {
     box-shadow: var(--shadow-box-);
+}
+.button-play {
+    padding: calc(var(--startpxsize) - 2px) calc(var(--startpxsize) + 5px);
+    border: calc(var(--startpxsize) - 10px);
+    font-size: calc(var(--startpxsize) * 3);
+    background: var(--primary-colr);
+    box-shadow: var(--shadow-box-);
+    margin-top: var(--startpxsize);
+    color: var(--text-color);
+    text-shadow: var(--shadow-colr);
+    
+}
+.button-play:hover  {
+    color: var(--color-after);
+    cursor: pointer;
 }
