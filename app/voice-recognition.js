@@ -3,7 +3,7 @@ const elementGuess = document.getElementById('Guess');
 const recognition = new SpeechRecognition();
 
 
-recognition.lang = 'pt-Br';
+recognition.lang = 'en';
 recognition.start();
 recognition.addEventListener('result', onSpeak);
 
@@ -14,7 +14,7 @@ function onSpeak(e) {
 }
 function showGuessOnScreen(guess) {
     elementGuess.innerHTML = `
-        <div>Você disse:</div>
+        <div>You said:</div>
         <span class="box">${guess}</span>
     `
 }

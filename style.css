@@ -39,7 +39,7 @@ h3 {
     font-size: var(--start-size1);
     margin-top: calc(var(--startpxsize) * 2px);
 }
-.mensagem {
+.message {
     font-size: 1.5em;
     margin-top: calc(var(--startpxsize) * 4px);
 }
